@@ -1,7 +1,5 @@
-
 #include "CircularLinkedList.h"
 
-/* Create a new circular linked list */
 CircularLinkedList* createNewCircularLinkedList(void)
 {
     CircularLinkedList *list = malloc(sizeof(CircularLinkedList));
@@ -18,7 +16,6 @@ CircularLinkedList* createNewCircularLinkedList(void)
     return list;
 }
 
-/* Create a new node */
 Node* createNewNode(int data)
 {
     Node *node = malloc(sizeof(Node));
@@ -34,7 +31,6 @@ Node* createNewNode(int data)
     return node;
 }
 
-/* Insert at the end */
 void insertAtEnd(CircularLinkedList *list, int data)
 {
     if (list == NULL) return;
@@ -55,7 +51,6 @@ void insertAtEnd(CircularLinkedList *list, int data)
     list->size++;
 }
 
-/* Insert at the beginning */
 void insertAtBeginning(CircularLinkedList *list, int data)
 {
     if (list == NULL) return;
@@ -110,7 +105,6 @@ void insertAtPosition(CircularLinkedList *list, int data, int position)
     list->size++;
 }
 
-/* Delete the first node */
 void deleteFirstNode(CircularLinkedList *list)
 {
     if (list == NULL || list->head == NULL) {
@@ -132,7 +126,6 @@ void deleteFirstNode(CircularLinkedList *list)
     list->size--;
 }
 
-/* Delete the last node */
 void deleteLastNode(CircularLinkedList *list)
 {
     if (list == NULL || list->head == NULL) {
@@ -341,7 +334,6 @@ void deleteList(CircularLinkedList *list)
     list->size = 0;
 }
 
-/* Find the middle node */
 Node* findMiddleNode(CircularLinkedList *list)
 {
     if (list == NULL || list->head == NULL) {
@@ -361,7 +353,6 @@ Node* findMiddleNode(CircularLinkedList *list)
     return slow;
 }
 
-/* Find the node with the maximum value */
 Node* findMaximumNode(CircularLinkedList *list)
 {
     if (list == NULL || list->head == NULL) {
@@ -383,7 +374,6 @@ Node* findMaximumNode(CircularLinkedList *list)
     return maximum;
 }
 
-/* Find the node with the minimum value */
 Node* findMinimumNode(CircularLinkedList *list)
 {
     if (list == NULL || list->head == NULL) {
