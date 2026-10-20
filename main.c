@@ -8,7 +8,6 @@ int main(void)
         return 1;
     }
 
-    /* Insert nodes at the beginning */
     insertAtBeginning(list, 1);
     insertAtBeginning(list, 2);
     insertAtBeginning(list, 3);
