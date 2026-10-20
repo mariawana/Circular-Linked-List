@@ -1,4 +1,3 @@
-
 #ifndef CIRCULAR_LINKEDLIST_H
 #define CIRCULAR_LINKEDLIST_H
 
@@ -17,16 +16,13 @@ typedef struct CircularLinkedList {
     int size;
 } CircularLinkedList;
 
-/* Creation */
 CircularLinkedList* createNewCircularLinkedList(void);
 Node* createNewNode(int data);
 
-/* Insertion */
 void insertAtEnd(CircularLinkedList *list, int data);
 void insertAtBeginning(CircularLinkedList *list, int data);
 void insertAtPosition(CircularLinkedList *list, int data, int position);
 
-/* Deletion */
 void deleteFirstNode(CircularLinkedList *list);
 void deleteLastNode(CircularLinkedList *list);
 void deleteNodeAtPosition(CircularLinkedList *list, int position);
@@ -36,7 +32,6 @@ bool search(CircularLinkedList *list, int data);
 void printList(CircularLinkedList *list);
 void printListReverse(CircularLinkedList *list);
 
-/* Reversing */
 void reverseList(CircularLinkedList *list);
 void reverseListRecursive(CircularLinkedList *list);
 void reverseListRecursiveHelper(Node *node);
